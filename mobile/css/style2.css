@@ -1,0 +1,513 @@
+body{
+background:#FFF url(http://mobify.me/static/site/stripes.png);
+font-size:62.5%;
+font-family:"Helvetica,Tahoma Bold", sans-serif;
+-webkit-text-size-adjust:none;
+}
+
+a.more {
+    background: url("../images/more-bg.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    font: bold 10px/10px Tahoma,Arial,Helvetica,sans-serif;
+    height: 12px;
+    padding: 0 0 0 10px;
+    text-decoration: none;
+    width: 35px;
+}
+
+p { margin-bottom:15px; }
+a { color: #9e0728; font-weight:bold; text-decoration: none; }
+strong { font-weight:bold; }
+em { font-style:italic }
+acronym, abbr { border-bottom: 1px dashed #999 }
+small { color:#000; font-size:1.2em; }
+ol, ul { list-style:none; }
+pre span {
+ word-wrap: break-word;
+ color: rgb(0, 128, 0);
+ margin: 10px 0;
+ font-size: 1.2em;
+}
+
+#stretcher{
+margin-bottom:103px;
+border:1px solid;
+}
+
+/******* Header *********/
+
+
+h1, h1 a,  .search .titlelink {
+font-size:1.18em;
+font-family: Tahoma Bold,Tahoma,Geneva,sans-serif;;
+color:#000;
+margin-bottom:8px;
+}
+
+
+h2, h3, .searchpage h1, .about h2{
+font-size:1.5em;
+font-weight:bold;
+color: #000;
+font-family: Tahoma Bold,Tahoma,Geneva,sans-serif;
+line-height:1.4;
+margin-bottom:8px;
+}
+
+h2, h3 {
+  font-size: 1.9em;
+}
+
+.title:first-child{font-size:1.4em;}
+/*.archive .title:first-child {
+ font-size:1.4em;
+}*/
+
+.title:first-child a{color:#000 !important;}
+.searchpage h1{font-size:2.7em !important;}
+
+/******* Logo *********/
+
+#logo{
+/*background: #300701 url(http://www.mobify.me/static/site/header_bg.png);*/
+background: url(../images/header_strip.png) repeat-x;
+display:block;
+height:82px;
+width:100%;
+position:relative;
+}
+
+
+#logo img.logotype{
+display:block;
+float:left;
+margin-top:12px;
+margin-left:15px;
+
+}
+
+#logo img.slogan{
+display:block;
+float:right;
+padding-right:45%;
+padding-top:2.5%;
+}
+
+/******* Navigation ***********/
+
+#nav{ padding:16px 0; }
+#nav a {
+ color:#004B8D;
+ padding:10px 0;
+ display:block;
+ text-transform:uppercase;
+ font-weight:bold;
+ font-size:1.2em;
+ text-align:center;
+ border-right:1px solid #d5d5d5;
+}
+#nav li:last-child a { border: 0; }
+
+#nav-menu, ul.post { margin:0 3%; }
+#nav-menu { 
+ list-style:none;
+ background:#fff;
+ border: 1px solid #d5d5d5;
+ -moz-border-radius: 7px;
+ -webkit-border-radius: 7px;
+}
+#nav-menu li:first-child, #nav-menu li:last-child { width: 21%; }
+#nav-menu li:nth-child(3) { width: 30%; }
+#nav-menu li{ display:inline-block; vertical-align:middle; width:25%; }
+
+
+/********** Homepage **********/
+
+.home ul li { display:block; clear:both; position:relative; }
+.home ul li:first-child .lix-wrap,.home li:first-child .lix-wrap,  .archive .entry div.title:first-child{
+  border-top:1px solid #d5d5d5;
+  -moz-border-radius-topleft:10px;
+  -webkit-border-top-left-radius:10px;
+  -moz-border-radius-topright:10px;
+  -webkit-border-top-right-radius:10px;
+}
+
+.home ul li:last-child .lix-wrap,.home li:last-child .lix-wrap, .archive .entry div.title:last-child{
+  -moz-border-radius-bottomleft:10px;
+  -webkit-border-bottom-left-radius:10px;
+  -moz-border-radius-bottomright:10px;
+  -webkit-border-bottom-right-radius:10px;
+}
+
+.home .title {
+float:right;
+display:inline-block;
+font-size:.8em;
+width:100%;
+height:70px;
+}
+
+.home div.entry {
+display:inline-block;
+margin-right:-100px;
+padding:7px 0 4px 0;
+}
+
+.archive div.entry { display:block; margin:0; padding:0; }
+
+.lix-wrap, .archive div.title {
+ padding:5px 5px 5px 6px;
+ border:1px solid #d5d5d5;
+ border-top:none;
+ background:#fff url(http://www.mobify.me/static/site/entryicon.png) no-repeat right;
+ overflow:auto;
+ font-size:inherit;
+}
+
+.blog-post .title h1 {padding-top:15px;}
+.home .title h2 a, #content-category .title h2 a {color: #000 !important;}
+
+.home .title h2 {
+  display:table;
+  height:100%;
+  width:99%;
+  /*padding-left:65px;*/
+  padding-left:15px;
+  font-size:1.95em;
+  margin:0;
+}
+
+
+.home .title h2 a{
+display:table-cell;
+vertical-align:middle;
+padding-right:25px;
+}
+
+.home img{
+display:block;
+float:left;
+width:56px;
+height:56px;
+margin:0 0 0 1px !important;
+}
+
+/****** Entry/Post *******/
+
+#content.search, #content.about, .blog-post {
+ margin:0 3%;
+ padding:0 7px;
+ border:1px solid #d5d5d5;
+ background:#FFF;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+}
+
+#content.search { padding:15px; }
+#content.about{ padding:10px 5px; }
+#content-category a{ margin-bottom:1px; display:block; }
+#content-category li ul li{margin:10px 0 0 15px;}
+#content p { font-size:1.5em; line-height:1.45em; }
+
+ul.post img{
+float:none;
+display:block;
+margin:5px auto 10px auto;
+}
+
+.blog-post ul.post li.post{
+border-bottom:1px solid #E0E0E0;
+padding-bottom:7px;
+margin-bottom:15px;
+clear:both;
+}
+
+.blog-post .entry li{
+font-size:1.4em;
+line-height:1.43em;
+list-style-position:inside;
+list-style-type:disc;
+margin:0 0 10px;
+padding-left:10px;
+border:none !important;
+}
+
+/** Comments **/
+
+h2#comments { font-size:1.2em; }
+
+.commenttitle {
+ font-size:1.6em;
+ font-weight:bold;
+ font-style:italic;
+ color:#9E0728;
+}
+.commentnumber{ float:right; }
+
+.tcomment .comment-inner-text p img{
+display:inline !important;
+margin:0 !important;
+}
+
+#content ul.post li ul.commentlist li, .tcomment {
+background-color:#F0F0F0;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+margin-bottom:20px;
+padding:10px 5px 5px;
+border:1px solid #DDDDDD;
+}
+
+.tcomment {
+position:relative;
+overflow:hidden;
+padding:0 5px;
+margin-bottom:5px;
+}
+
+.tcomment .reply a {
+float:right;
+font-size:0.9em;
+padding:0;
+text-align:right;
+color:#333333;
+display:none;
+}
+
+
+.commentwrapper{margin-top:-6px}
+
+.tcomment .postedtime{font-size:1em;}
+.comment-inner-text{padding-top:3px;}
+
+.tcomment div .postedtime, .tcomment .commenttitle {
+margin-left:34px;
+}
+
+#commentform #addcommentbutton {
+  margin-bottom:15px;
+}
+
+#content #comments_section div.tcomment div.avatara img {
+float:left;
+display:block;
+margin:0;
+position:absolute;
+top:5px;
+background:red;
+}
+
+div.avatara img{
+height:30px;
+width:30px;
+}
+
+.commentnumber{
+font-size:1.1em;
+margin-top:4px;
+}
+
+/****** Add Comments & Form ******/
+
+#addcomment, #top_link{margin-top:10px;}
+#author,#email,#url,#comment{width:90%;}
+#comment{height:120px;}
+#captchaNumDiv{margin:15px 0 0 0;}
+
+#captchaNumDiv label{
+font-size:.8em;
+margin-left:5px;
+}
+
+.reply{ display:none;}
+
+#commentform input {
+margin:5px 5px 1px 0;
+padding:2px;
+width:170px;
+}
+
+#commentform textarea {
+font-family:Verdana,Geneva,sans-serif;
+font-size:1.25em;
+width:97%;
+}
+
+#subscribe{
+width:inherit !important;
+display:inline;
+}
+
+.subscribe-to-comments label{
+color:#000;
+font-size:.8em;
+vertical-align:middle;
+}
+
+/****** Search *******/
+
+#search {
+/*background:#EEE;
+padding:10px 5px;*/
+padding:0 10px;
+margin-top:15px;
+}
+
+#search-input {
+width:90%;
+border:1px solid #ccc;/*none;*/
+background:#fff;
+padding:4px 5px;
+line-height:13px;
+font-size:1.5em;
+vertical-align:top;
+height:20px;
+-moz-border-radius: 15px;
+ -webkit-border-radius: 15px;
+
+}
+/*
+#search-wrap{
+
+border:1px solid #CCC;
+-moz-border-radius: 15px;
+ -webkit-border-radius: 15px;
+ padding:0 20px 0 15px;
+ background:#fff;
+ margin:0 auto;
+}
+*/
+
+#btn {
+width:22px;
+height:18px;
+border:none;
+background:url(http://mobify.me/static/site/search_icon.png) no-repeat;
+margin-left:-30px;
+margin-top:5px;
+vertical-align:top;
+}
+
+#left-search-gap, #right-search-gap{
+  height:26px;
+  width:10px;
+  background:#fff;
+  display:inline-block;
+  margin:0;
+  padding:0;
+}
+
+#left-search-gap {
+ -moz-border-radius-topleft:10px;
+ -webkit-border-top-left-radius:10px;
+ -moz-border-radius-bottomleft:10px;
+ -webkit-border-bottom-left-radius:10px;
+}
+
+
+#right-search-gap {
+ -moz-border-radius-topright:10px;
+ -webkit-border-top-right-radius:10px;
+ -moz-border-radius-bottomright:10px;
+ -webkit-border-bottom-right-radius:10px;
+}
+
+.titlelink {
+color:#000;
+font-weight:bold;
+text-decoration:underline;
+font-size:1.1em;
+}
+
+
+.linktext{color:#9e0728;}
+
+
+/********* Footer **********/
+
+#footer{
+/*background:#9e0728;*/
+background:#ececec url(http://mobify.me/static/site/footer_bg.png) repeat-x;
+color:#000;
+padding:6px 10px;
+text-align:center;
+margin-top:30px;
+}
+
+#footer p{
+color:#000;
+font-size:1.5em;
+margin:10px 0 0px 0;
+}
+
+#footer a{
+ color:#000;
+ font-weight:normal;
+ padding-bottom:4px;
+ display:inline-block;
+}
+
+
+/******* Archives/ Category ********/
+
+#content ul.post .archives li{
+clear:both;
+margin-bottom:10px;
+}
+
+ul.archive li span{
+float:left;
+margin-right:5px;
+margin-left:15px;
+font-size:1.4em;
+margin-top:1px;
+}
+
+.space_archive_titles{margin:0 !important;}
+
+.archives-content .entry ul.archives li a{
+display:block;
+margin-left:42px;
+}
+
+.archives-content .entry h2 { margin-top:25px; }
+#content-category .title h2, .entry h2.inner_archive_titles {
+ font-size:1.85em;
+ margin:0;
+ padding-left:12px;
+}
+
+.inner_archive_titles a{
+ color:#000 !important;
+ display:block;  
+ padding:10px 0;
+}
+
+#content-category .entry ul.archives li a,#content .entry ul.archives li a {
+ font-weight:bold;
+ margin-bottom:0px;
+ font-size:1.4em;
+ line-height:1.2em;
+}
+
+/****** Search Page ******/
+
+.search li {
+font-size:1.4em;
+margin:20px 0;
+}
+
+.center {
+ font-size:1.4em !important;
+ font-weight:normal;
+ margin-bottom:51px;
+}
+
+/****** 404 ********/
+
+.oops-txt p {
+font-size:1.4em;
+margin-bottom:46px;
+}
